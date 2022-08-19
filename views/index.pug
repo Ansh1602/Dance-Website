@@ -1,0 +1,67 @@
+//- index.pug
+doctype html
+html
+  head
+    title Ansh Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar 
+      ul
+        div#logo 
+          img(src ="/static/img/logo.png")
+          | ADA
+        li #[a(href = "/") Home] 
+        li #[a(href = "/") About]    
+        li #[a(href = "/") Services] 
+        li #[a(href = "/") Class Info] 
+        li #[a(href = "/") Contact Us]    
+    
+    section#introSection 
+      div Welcome to Ansh's Dance Academy 
+      div.small Eat Sleep Dance Repeat   
+
+    section#missionSection
+      h2 Our Mission
+      div.card
+        h3 Dance Perfection 
+
+        div.card-box 
+          div.card-img 
+            img(src ="/static/img/dancer1.png")
+
+          div.card-content
+            p This is the best dance academy in the universe
+        
+      div.card 
+        h3 Dance the way you like
+        div.card-box 
+          div.card-img 
+            img(src ="/static/img/dancer2.png")
+
+          div.card-content
+            p This is the best dance academy in the universe
+
+      div.card 
+        h3 Expert Teaching
+        div.card-box 
+          div.card-img 
+            img(src ="/static/img/dancer3.png")
+
+          div.card-content
+            p This is the best dance academy in the universe
+
+    section#sponsorsSection
+      h2 Our Sponsors 
+
+      div#sponsors 
+        img(src="/static/img/apple.png", alt="Sponsor Image" class="spImg")
+        img(src="/static/img/microsoft_PNG14.png", alt="Sponsor Image" class="spImg")
+        img(src="/static/img/skype_PNG16.png", alt="Sponsor Image" class="spImg")
+        img(src="/static/img/google.png", alt="Sponsor Image" class="spImg")
+
+    footer#footer 
+      | Copyright ©️ 2022 anshdanceacademy.com | All rights reserved.
+    
+    script
+      include ../static/index.js
